@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "ru.setupassistant.ios26"
-    compileSdk = 36
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "ru.setupassistant.ios26"
         minSdk = 26
-        targetSdk = 36
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
     }
@@ -29,12 +29,10 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.16.0")
-    implementation("androidx.activity:activity-ktx:1.10.1")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.0")
+    implementation("androidx.core:core-ktx:1.13.1")
+    implementation("androidx.activity:activity-ktx:1.9.2")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.6")
     implementation("com.google.android.material:material:1.12.0")
-
-    // Shizuku is optional. The launcher itself does not need elevated access.
     implementation("dev.rikka.shizuku:api:13.1.5")
     implementation("dev.rikka.shizuku:provider:13.1.5")
 }
